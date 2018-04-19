@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>..\Bin\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\Lib</AdditionalLibraryDirectories>
+      <OutputFile>..\Bin\$(ProjectName).exe</OutputFile>
+      <AdditionalDependencies>ITKBiasCorrection-4.13d.lib;ITKBioCell-4.13d.lib;ITKCommon-4.13d.lib;ITKDICOMParser-4.13d.lib;itkdouble-conversion-4.13d.lib;ITKEXPAT-4.13d.lib;ITKFEM-4.13d.lib;itkgdcmcharls-4.13d.lib;itkgdcmCommon-4.13d.lib;itkgdcmDICT-4.13d.lib;itkgdcmDSED-4.13d.lib;itkgdcmIOD-4.13d.lib;itkgdcmjpeg8-4.13d.lib;itkgdcmjpeg12-4.13d.lib;itkgdcmjpeg16-4.13d.lib;itkgdcmMEXD-4.13d.lib;itkgdcmMSFF-4.13d.lib;itkgdcmopenjp2-4.13d.lib;itkgdcmsocketxx-4.13d.lib;ITKgiftiio-4.13d.lib;ITKIOBioRad-4.13d.lib;ITKIOBMP-4.13d.lib;ITKIOBruker-4.13d.lib;ITKIOCSV-4.13d.lib;ITKIOGDCM-4.13d.lib;ITKIOGE-4.13d.lib;ITKIOGIPL-4.13d.lib;ITKIOHDF5-4.13d.lib;ITKIOImageBase-4.13d.lib;ITKIOIPL-4.13d.lib;ITKIOJPEG-4.13d.lib;ITKIOLSM-4.13d.lib;ITKIOMesh-4.13d.lib;ITKIOMeta-4.13d.lib;ITKIOMINC-4.13d.lib;ITKIOMRC-4.13d.lib;ITKIONIFTI-4.13d.lib;ITKIONRRD-4.13d.lib;ITKIOPNG-4.13d.lib;ITKIOSiemens-4.13d.lib;ITKIOSpatialObjects-4.13d.lib;ITKIOStimulate-4.13d.lib;ITKIOTIFF-4.13d.lib;ITKIOTransformBase-4.13d.lib;ITKIOTransformHDF5-4.13d.lib;ITKIOTransformInsightLegacy-4.13d.lib;ITKIOTransformMatlab-4.13d.lib;ITKIOVTK-4.13d.lib;ITKIOXML-4.13d.lib;itkjpeg-4.13d.lib;ITKKLMRegionGrowing-4.13d.lib;ITKLabelMap-4.13d.lib;itklbfgs-4.13d.lib;ITKMesh-4.13d.lib;ITKMetaIO-4.13d.lib;itkminc2-4.13d.lib;itknetlib-4.13d.lib;itkNetlibSlatec-4.13d.lib;ITKniftiio-4.13d.lib;ITKNrrdIO-4.13d.lib;ITKOptimizers-4.13d.lib;ITKOptimizersv4-4.13d.lib;ITKPath-4.13d.lib;itkpng-4.13d.lib;ITKPolynomials-4.13d.lib;ITKQuadEdgeMesh-4.13d.lib;ITKSpatialObjects-4.13d.lib;ITKStatistics-4.13d.lib;itksys-4.13d.lib;itktestlib-4.13d.lib;itktiff-4.13d.lib;ITKTransform-4.13d.lib;ITKTransformFactory-4.13d.lib;itkv3p_netlib-4.13d.lib;itkvcl-4.13d.lib;ITKVideoCore-4.13d.lib;ITKVideoIO-4.13d.lib;itkvnl_algo-4.13d.lib;itkvnl-4.13d.lib;ITKVNLInstantiation-4.13d.lib;ITKVTK-4.13d.lib;ITKWatersheds-4.13d.lib;itkzlib-4.13d.lib;ITKznz-4.13d.lib;libitkhdf5_cpp_Dd.lib;libitkhdf5_Dd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

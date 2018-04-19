@@ -1,0 +1,9 @@
+*x64\
+*Debug\
+*.suo
+*.ilk
+*.pdb
+*.tlog
+*.obj
+*.log
+*.user
