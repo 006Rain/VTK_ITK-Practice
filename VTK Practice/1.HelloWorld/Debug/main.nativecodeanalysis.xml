@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<DEFECTS><DEFECT><SFA><FILEPATH>e:\githubrepositories\cv-vtk_itk\vtk practice\include\</FILEPATH><FILENAME>vtkvariantinlineoperators.h</FILENAME><LINE>15</LINE><COLUMN>41</COLUMN></SFA><DEFECTCODE>6287</DEFECTCODE><DESCRIPTION>冗余代码:    左右两侧的子表达式完全相同。</DESCRIPTION><FUNCTION>IsSigned64Bit</FUNCTION><DECORATED>?IsSigned64Bit@@YA_NH@Z</DECORATED><FUNCLINE>13</FUNCLINE><PATH/></DEFECT></DEFECTS>
