@@ -1,6 +1,7 @@
 /*
 Description:
-This example 
+Here is an example of a custom file-formate reader that produces a VTK XML
+PolyData from a plain-text input formate.
 */
 
 #include "vtkAutoInit.h"
@@ -18,7 +19,7 @@ VTK_MODULE_INIT( vtkInteractionStyle );
 
 using namespace std;
 
-vtkPolyData* CustorReader( istream& inStream )
+vtkPolyData* CustomerReader( istream& inStream )
 {
 	vtkIdType number_of_points, number_of_triangles;
 	inStream >> number_of_points >> number_of_triangles;
@@ -54,7 +55,7 @@ int main()
 	string strFile = "../Bin/ExampleFiles/ReadPlainTextTriangles.txt";
 	ifstream fileStream( strFile );
 	
-	vtkSmartPointer<vtkPolyData> polyData = vtkSmartPointer<vtkPolyData>::Take( CustorReader( fileStream ) );
+	vtkSmartPointer<vtkPolyData> polyData = vtkSmartPointer<vtkPolyData>::Take( CustomerReader( fileStream ) );
 
 	vtkSmartPointer<vtkXMLPPolyDataWriter> xmlWriter = vtkSmartPointer<vtkXMLPPolyDataWriter>::New();
 
