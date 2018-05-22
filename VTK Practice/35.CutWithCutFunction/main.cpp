@@ -69,11 +69,15 @@ int main()
 	plane->SetNormal( 1, 0, 0 );
 
 	//Cutter
-	double high = plane->EvaluateFunction( (bounds[ 0 ] + bounds[ 1 ])*0.5, (bounds[ 2 ] + bounds[ 3 ])*0.5, bounds[ 5 ] );
+/*	double high = plane->EvaluateFunction( (bounds[ 0 ] + bounds[ 1 ])*0.5, (bounds[ 2 ] + bounds[ 3 ])*0.5, bounds[ 5 ] );*/
 	vtkSmartPointer<vtkCutter> cutter = vtkSmartPointer<vtkCutter>::New();
 	cutter->SetInputConnection( reader->GetOutputPort() );
 	cutter->SetCutFunction( plane );
+#if 1
 	cutter->GenerateValues( nNumOfCuts, 0.01, 0.99 );
+#else
+	cutter->SetValue( 0, 0.1 );
+#endif
 
 	vtkSmartPointer<vtkPolyDataMapper> cutterMapper = vtkSmartPointer<vtkPolyDataMapper>::New();
 	cutterMapper->SetInputConnection( cutter->GetOutputPort() );
